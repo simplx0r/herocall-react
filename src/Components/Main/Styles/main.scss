@@ -1,0 +1,181 @@
+main {
+    background: #37474F;
+}
+
+.main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 40px;
+}
+
+.main-row {
+    display: flex;
+    padding: 100px 0;
+}
+
+.main-row-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    flex: 1;
+    max-width: 100%;
+    
+
+}
+
+.main-row-content__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 40px;
+    color: #FFFFFF;
+    padding-bottom: 16px;
+}
+
+.main-row-content__description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+    color: #FFFFFF;
+    padding-top: 16px;
+}
+
+.main-row-content__exp {
+    flex: 1;
+    position: relative;
+    
+}
+
+.main-row-content__exp-img {
+    max-width: 100%;
+}
+
+.lesson-image__one {
+}
+
+.screen-image__one {
+    position: relative;
+    z-index: 1;
+}
+
+.p-right {
+    padding-right: 80px
+}
+
+.p-left {
+    padding-left: 80px
+}
+
+@media (max-width: 720px) {
+
+    .main-row {
+        flex-direction: column;
+    }
+
+    .reverse {
+        flex-direction: column-reverse !important;
+    }
+
+    .main-row-content {
+        padding-bottom: 3em;
+    }
+
+    .main-row-content__exp {
+        text-align: center;
+    }
+
+    .p-left {
+        padding-left: 0;
+    }
+
+    .p-right {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .main-row {
+        padding: 75px 0;
+    }
+
+    .main-row-content {
+        padding-bottom: 2em;
+    }
+
+    .main-row-content__title {
+        font-size: 26px;
+    }
+
+    .main-row-content__description {
+        font-size: 14px;
+        padding-top: 0;
+    }
+}
+
+
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: rgb(62, 233, 27);
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: rgb(105, 204, 66);
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(55,71,79);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+
+

@@ -1,0 +1,196 @@
+.stats {
+    background: #F5F5F5;
+}
+
+.stats-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 40px;
+}
+
+.stats-container__start {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+    color: #263238;
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+
+.stats-container__start-container {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.stats-container__start-btn {
+    background: #43A047;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px 60px;
+    color: #FFFFFF;
+
+    text-align: center;
+    text-decoration: none;
+}
+
+.stats-container-info {
+    display: flex;
+    padding: 50px 0;
+}
+
+.stats-container-info__count {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-right: 140px;
+}
+
+.stats-container-info__users {
+    font-style: normal;
+    font-weight: bold;
+    color: #263238;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.stats-container-info__premium {
+    font-style: normal;
+    font-weight: bold;
+    color: #F6A933;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.stats-container-info__users-value {
+    font-size: 144px;
+    line-height: 158px;
+}
+
+.stats-container-info__users-title {
+    font-size: 36px;
+    line-height: 40px;
+}
+
+.stats-container-info__premium-value {
+    font-size: 144px;
+    line-height: 158px;
+}
+
+.stats-container-info__premium-title {
+    font-size: 36px;
+    line-height: 31px;
+}
+
+.stats-container-info__update {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000000;
+    text-align: right;
+
+    padding: 10px 0;
+}
+
+.stats-container-info__reviews {
+    flex: 1;
+}
+
+.stats-container-info__review {
+
+    background: #C4C4C4;
+    padding: 10px 30px;
+    height: 70px;
+    margin-top: 25px;
+    margin-bottom: 60px;
+    font-size: 14px;
+}
+
+.stats-container-info__review-bold {
+    font-weight: 600;
+    font-style: normal;
+    padding-bottom: 8px;
+}
+
+@media (max-width: 960px) {
+
+    .stats-container-info__count {
+        padding-right: 80px;
+    }
+
+    .stats-container-info__review {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 720px) {
+
+    .stats-container-info__count {
+        padding-right: 0;
+    }
+
+    .stats-container-info__review {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .stats-container-info {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .stats-container-info__review {
+        font-size: 12px;
+        padding: 20px 10px;
+    }
+
+    .stats-container__start {
+        font-size: 28px;
+        line-height: 34px;
+        padding-bottom: 0;
+    }
+
+    .stats-container__start-btn {
+        font-size: 16px;
+        padding: 15px 46px;
+    }
+
+    .stats-container__start-container {
+        padding: 30px 0;
+    }
+
+    .stats-container-info__users-value {
+        font-size: 110px;
+        line-height: 90px;
+    }
+
+    .stats-container-info__users-title {
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+
+    .stats-container-info__premium-value {
+        font-size: 110px;
+        line-height: 90px;
+    }
+
+    .stats-container-info__premium-title {
+        font-size: 30px;
+    }
+
+    .stats-container-info__update {
+        font-size: 14px;
+    }
+}

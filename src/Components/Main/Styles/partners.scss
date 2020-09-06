@@ -1,0 +1,65 @@
+.partners {
+    background: #F5F5F5;
+}
+
+.partners-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 100px 40px
+}
+
+.partners-container__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+    color: #263238;
+    padding-bottom: 100px;
+}
+
+.partners-container__pairs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.partners-container-pair {
+    width: 150px;
+    padding: 0 25px;
+}
+
+.partners-container-pair__hyperschool {
+    display: flex;
+
+}
+
+.partners-container-pair__simplePoker {
+}
+
+.partners-container-pair__gipsy {
+}
+
+.partners-container-pair__pokerOff {
+    display: flex;
+}
+
+.partners-container-pair__sp {
+    display: flex;
+}
+
+.partners-container__pairs-image {
+    width: 100%;
+}
+
+@media (max-width: 480px) {
+    .partners-container__title {
+        font-size: 32px;
+        padding-bottom: 60px;
+    }
+}
+
+@media (max-width: 600px) {
+    .partners-container-pair {
+        padding: 0 10px;
+    }
+}
